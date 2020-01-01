@@ -19,10 +19,6 @@
     line-height: 1.5rem;
 }
 
-.education-institution-location {
-    color: var(--primary-color);
-}
-
 @media screen and (min-width: 700px) {
     #education {
         margin: 2rem 4rem;

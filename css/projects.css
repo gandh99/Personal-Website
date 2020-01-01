@@ -1,0 +1,41 @@
+@import url(styles.css);
+
+.projects-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    margin: 0rem 0rem;
+}
+
+.projects-grid-item {
+    margin: 0rem;
+}
+
+.projects-grid-item > figure {
+}
+
+.projects-grid-item > figure > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (min-width: 700px) {
+    #projects {
+        margin: 2rem 4rem;
+    }
+    .projects-grid-container {
+        grid-template-columns: auto auto;
+        margin: 0rem 2rem;
+    }
+    .projects-grid-item {
+        margin: 0rem;
+    }
+    .projects-grid-item > figure {
+        margin: 0.5rem;
+    }
+    .projects-grid-item > figure > img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
