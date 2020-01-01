@@ -1,0 +1,39 @@
+@import url(styles.css);
+
+#work {
+}
+
+.work-row {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 4rem;
+    text-align: justify;
+}
+
+.work-col-company {
+    padding: 0rem;
+}
+
+.work-col-description {
+    line-height: 1.5rem;
+}
+
+.work-company-location {
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 700px) {
+    #work {
+        margin: 2rem 4rem;
+    }
+    .work-row {
+        flex-direction: row;
+    }
+    .work-col-company {
+        min-width: 20rem;
+        padding: 0rem 2rem;
+    }
+    .work-col-description {
+        padding: 0rem 2rem;
+    }
+}

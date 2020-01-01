@@ -1,0 +1,40 @@
+@import url(styles.css);
+
+#education {
+    /* margin: 2rem 4rem; */
+}
+
+.education-row {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 4rem;
+    text-align: justify;
+}
+
+.education-col-institution {
+    padding: 0rem;
+}
+
+.education-col-description {
+    line-height: 1.5rem;
+}
+
+.education-institution-location {
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 700px) {
+    #education {
+        margin: 2rem 4rem;
+    }
+    .education-row {
+        flex-direction: row;
+    }
+    .education-col-institution {
+        min-width: 18rem;
+        padding: 0rem 2rem;
+    }
+    .education-col-description {
+        padding: 0rem 2rem;
+    }
+}

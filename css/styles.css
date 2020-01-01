@@ -1,0 +1,8 @@
+:root {
+    /* Fonts */
+    --default-font: 'Open Sans', sans-serif !important;
+
+    /* Colours */
+    --primary-color: rgb(34, 163, 159);
+    --container-background-color: rgb(242, 239, 224);
+}
