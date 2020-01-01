@@ -38,5 +38,19 @@ body, html {
     margin: 4rem;
 }
 
+.location {
+    color: var(--primary-color);
+    padding: 0.5rem 0rem;
+    text-align: left;
+}
 
-
+.location:before {
+    content: "";
+    display: block;
+    float: left;
+    background: url("../images/icon_location.png") no-repeat;
+    background-size: cover;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
