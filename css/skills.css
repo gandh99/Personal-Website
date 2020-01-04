@@ -1,0 +1,39 @@
+@import url(styles.css);
+.skills-grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0rem;
+}
+
+.skills-grid-item {
+    margin: 0.5rem 2rem;
+}
+
+.skill-name {
+}
+
+.skill-score {
+    float: right;
+}
+
+/* For the star rating */
+.checked {
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 700px) {
+    #skills {
+        margin: 2rem 10rem;
+    }
+    .skills-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    .skills-grid-item {
+        display: inline;
+        margin: 0.5rem 3rem;
+        max-width: 300px;
+        text-align: center;
+    }
+    .skill-name {
+    }
+}
