@@ -1,0 +1,39 @@
+@import url(styles.css);
+#contact-section-container {
+    background-color: var(--contact-container-color);
+}
+
+#contact-me * {
+    color: white;
+    position: relative;
+}
+
+.contact-flex-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+}
+
+.contact-detail {
+    margin: 1rem 2rem;
+    height: 50%;
+    justify-content: center;
+}
+
+.contact-detail img {
+    /* Ensure equal size for all images */
+    max-width: 75px;
+    height: auto;
+    /* Centering the image in the div */
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 700px) {
+    .contact-flex-container {
+        flex-direction: row;
+        margin: 0 10rem;
+        justify-content: center;
+    }
+}
