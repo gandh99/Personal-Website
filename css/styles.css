@@ -5,4 +5,6 @@
     /* Colours */
     --primary-color: rgb(34, 163, 159);
     --container-background-color: rgb(242, 239, 224);
+    --button-color: #4CAF50;
+    --button-color-dark: rgb(44, 100, 46);
 }

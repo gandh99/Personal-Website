@@ -5,45 +5,80 @@
     margin: 0rem;
 }
 
-.projects-grid-item {
+.project-grid-item {
     margin: 0rem;
     width: 100%;
     position: relative;
 }
 
+/* Overlay portion */
+
 .project-overlay {
     position: absolute;
     display: none;
-    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    background: grey;
+    background: black;
+    color: white;
     width: 100%;
     height: 100%;
+    overflow: hidden;
+    font-size: 0.9rem;
 }
 
-.projects-grid-item:hover .project-overlay {
+.project-grid-item:hover .project-overlay {
     display: block;
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
-.projects-grid-item img {
+.project-grid-item img {
     width: 100%;
     height: auto;
     display: block;
 }
+
+.project-overlay section {
+    padding: 0.5rem;
+}
+
+/* Button style in overlay */
+
+/* .project-overlay section button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.project-overlay section button:hover {
+    background-color: var(--button-color-dark);
+} */
 
 @media screen and (min-width: 700px) {
     #projects {
         margin: 2rem 4rem;
     }
     .projects-grid-container {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         margin: 0rem 2rem;
     }
-    .projects-grid-item {
+    .project-grid-item {
         margin: 0rem;
     }
+    .project-overlay section {
+        padding: 2rem;
+    }
 }
+
+/* References
+- https://stackoverflow.com/questions/28990130/text-overlay-on-images-on-responsive-grid-using-html-ccs */
