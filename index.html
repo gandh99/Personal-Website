@@ -23,11 +23,21 @@
 </head>
 
 <body>
-    <span id="nav-menu-container" onclick="transformNav(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+    <span id="nav-menu-container" onclick="transformNavIcon(this), openNav()">
+        <div id="nav-bar1"></div>
+        <div id="nav-bar2"></div>
+        <div id="nav-bar3"></div>
     </span>
+    <div id="nav-drawer-container">
+        <div id="nav-drawer-content">
+            <a href="#">Projects</a>
+            <a href="#">Work</a>
+            <a href="#">Education</a>
+            <a href="#">Skills</a>
+            <a href="#">Travels</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
     <div class="banner">
         <div id="welcome-message">
             <h1 id="welcome-message-name">GAN DING HAN</h1>

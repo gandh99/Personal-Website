@@ -1,4 +1,6 @@
 @import url(styles.css);
+/* For the hamburger menu icon */
+
 #nav-menu-container {
     display: inline-block;
     cursor: pointer;
@@ -9,10 +11,10 @@
     opacity: 0.7;
     top: 10px;
     left: 10px;
-    z-index: 1;
+    z-index: 2;
 }
 
-.bar1, .bar2, .bar3 {
+#nav-bar1, #nav-bar2, #nav-bar3 {
     width: 26px;
     height: 2px;
     background-color: white;
@@ -20,18 +22,47 @@
     transition: 0.4s;
 }
 
-.change .bar1 {
+.change #nav-bar1 {
     -webkit-transform: rotate(-45deg) translate(-6px, 6px);
     transform: rotate(-45deg) translate(-6px, 6px);
 }
 
-.change .bar2 {
+.change #nav-bar2 {
     opacity: 0;
 }
 
-.change .bar3 {
+.change #nav-bar3 {
     -webkit-transform: rotate(45deg) translate(-6px, -6px);
     transform: rotate(45deg) translate(-6px, -6px);
+}
+
+/* For the navigation drawer */
+
+#nav-drawer-container {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    justify-content: center;
+}
+
+#nav-drawer-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 2rem 4.5rem;
+}
+
+#nav-drawer-content a {
+    color: var(--contact-container-color);
+    font-size: 20px;
+    margin: 0.7rem 0;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 700px) {}
