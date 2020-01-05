@@ -12,9 +12,6 @@
 #welcome-message {
     width: 70%;
     height: 50%;
-    /* background-color: rgba(128, 128, 128, 0.356); */
-    /* color: var(--contact-container-colour); */
-    /* border: 5px solid red; */
     /* Center this div in its parent div */
     position: relative;
     top: 50%;
