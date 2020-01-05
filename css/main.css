@@ -47,22 +47,29 @@ body, html {
 }
 
 .section-container:nth-child(even) {
-    background-color: var(--container-background-color);
+    background-color: var(--light-grey);
+}
+
+.section-container:nth-child(odd) {
+    background-color: var(--light-indigo);
+    color: white;
 }
 
 .section-title {
-    color: var(--primary-color);
+    color: var(--light-turqoise);
     font-size: 2rem;
     margin: 2rem;
     text-align: center;
 }
 
 .section-description {
+    /* color: var(--light-grey); */
+    color: white;
     margin: 4rem 8rem;
 }
 
 .location {
-    color: var(--primary-color);
+    color: var(--light-turqoise);
     padding: 0.5rem 0rem;
     text-align: left;
 }

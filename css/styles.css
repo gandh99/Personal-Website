@@ -8,4 +8,11 @@
     --contact-container-color: #434242;
     --button-color: #4CAF50;
     --button-color-dark: rgb(44, 100, 46);
+
+    /* Experimental colours */
+    --dark-indigo: #25274D;
+    --light-indigo: #484666;
+    --light-grey: #AAABB8;
+    --light-turqoise: #2E9CCA;
+    --dark-turqoise: #29648A;
 }

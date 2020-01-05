@@ -1,6 +1,6 @@
 @import url(styles.css);
 #contact-section-container {
-    background-color: var(--contact-container-color);
+    background-color: var(--light-indigo);
 }
 
 #contact-me * {
