@@ -17,10 +17,9 @@ function transformNavIcon(x) {
 
 function openNav() {
     // Open the nav drawer
-    document.getElementById("nav-drawer-container").style.height = "auto";
+    document.getElementById("nav-drawer-container").style.height = "350px";
     document.getElementById("nav-menu-container").style.backgroundColor = "transparent";
 
-    // Style the hamburger icon
    hamburgerClose();
 }
 
