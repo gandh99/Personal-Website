@@ -5,38 +5,6 @@ body, html {
     margin: 0;
 }
 
-.banner {
-    background-image: url("../images/ocean.jpg");
-    opacity: 60%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-}
-
-#welcome-message {
-    width: 50%;
-    height: 50%;
-    border: 5px solid red;
-    /* Center this div in its parent div */
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 auto;
-    /* Center text */
-    text-align: center;
-    /* Allow contents inside to be centered */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Specify a fixed width for the child, which is called a "flex item" */
-#welcome-message p {
-    flex: 0 0 320px;
-    font-size: 2rem;
-}
-
 .flex-container {
     display: flex;
     flex-direction: column;

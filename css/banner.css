@@ -1,0 +1,56 @@
+@import url(styles.css);
+.banner {
+    background-image: url("../images/mountain.jpg");
+    opacity: 0.7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#welcome-message {
+    width: 70%;
+    height: 50%;
+    /* background-color: rgba(128, 128, 128, 0.356); */
+    /* color: var(--contact-container-colour); */
+    /* border: 5px solid red; */
+    /* Center this div in its parent div */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 auto;
+    /* Center text */
+    text-align: center;
+    /* Allow contents inside to be centered */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Specify a fixed width for the child, which is called a "flex item" */
+
+#welcome-message-name {
+    font-size: 6.5vw;
+    /* letter-spacing: 0.6rem; */
+    margin: 0;
+    padding: 1rem 1rem;
+    background-color: #6464647a;
+    color: white;
+}
+
+#welcome-message-description {
+    font-size: 5vw;
+}
+
+@media screen and (min-width: 700px) {
+    #welcome-message-name {
+        font-size: 4vw;
+        letter-spacing: 0.6rem;
+        padding: 1rem 2rem;
+    }
+    #welcome-message-description {
+        font-size: 2vw;
+    }
+}
