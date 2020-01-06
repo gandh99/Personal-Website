@@ -54,3 +54,19 @@ document.addEventListener('click', function (event) {
         openCloseNav(navMenuContainer);
     }
 });
+
+// Scroll to a particular section (marked by its ID)
+function scrollToSection(sectionId) {
+    var element_to_scroll_to = document.getElementById(sectionId);
+    element_to_scroll_to.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    });
+
+    // Close the drawer after scrolling
+    var navMenuContainer = document.getElementById("nav-menu-container");
+    openCloseNav(navMenuContainer);
+}
+
+// References
+// https://stackoverflow.com/questions/3163615/how-to-scroll-html-page-to-given-anchor

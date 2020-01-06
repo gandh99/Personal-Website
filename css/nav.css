@@ -48,7 +48,7 @@
     left: 0;
     background-color: white;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.3s;
     justify-content: center;
 }
 
@@ -65,6 +65,7 @@
     margin: 0.7rem 0;
     text-decoration: none;
     transition: 0.5s;
+    cursor: pointer;
 }
 
 @media screen and (min-width: 700px) {
