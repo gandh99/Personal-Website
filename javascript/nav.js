@@ -1,13 +1,12 @@
 var navIsOpen = false;
 
+// Main function used to trigger the opening and closing of the nav drawer
 function openCloseNav(x) {
     transformNavIcon(x);
     if (navIsOpen) {
         closeNav();
-        navIsOpen = false;
     } else {
         openNav();
-        navIsOpen = true;
     }
 }
 
@@ -16,14 +15,18 @@ function transformNavIcon(x) {
 }
 
 function openNav() {
+    navIsOpen = true;
+
     // Open the nav drawer
-    document.getElementById("nav-drawer-container").style.height = "350px";
+    document.getElementById("nav-drawer-container").style.height = "370px";
     document.getElementById("nav-menu-container").style.backgroundColor = "transparent";
 
-   hamburgerClose();
+    hamburgerClose();
 }
 
 function closeNav() {
+    navIsOpen = false;
+
     document.getElementById("nav-drawer-container").style.height = "0";
     hamburgerOpen();
 }
@@ -39,3 +42,15 @@ function hamburgerOpen() {
     document.getElementById("nav-bar2").style.backgroundColor = "white";
     document.getElementById("nav-bar3").style.backgroundColor = "white";
 }
+
+// When the nav drawer is open and the user clicks outside the drawer, the drawer will close
+document.addEventListener('click', function (event) {
+    var navDrawerContainer = document.getElementById("nav-drawer-container");
+    var navMenuContainer = document.getElementById("nav-menu-container");
+    var isClickInNavDrawerContainer = navDrawerContainer.contains(event.target);
+    var isClickInNavMenuContainer = navMenuContainer.contains(event.target);
+
+    if (navIsOpen && !isClickInNavDrawerContainer && !isClickInNavMenuContainer) {
+        openCloseNav(navMenuContainer);
+    }
+});
