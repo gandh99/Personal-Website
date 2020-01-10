@@ -1,6 +1,6 @@
 @import url(styles.css);
 .banner {
-    background-image: url("../images/mountain.jpg");
+    background-image: url("../images/dev.jpg");
     opacity: 0.7;
     background-attachment: fixed;
     background-position: center;
